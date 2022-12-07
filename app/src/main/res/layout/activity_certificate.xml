@@ -44,28 +44,41 @@
                     <!-- Content here -->
 
                     <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="304dp"
-                        android:layout_height="228dp"
+                        android:id="@+id/cert1"
+                        android:layout_width="343dp"
+                        android:layout_height="470dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/foto1"
-                        />
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="@string/about"
-                        android:textSize="25sp"
-
-                        />
-
+                        app:srcCompat="@drawable/cert1"
+                        android:layout_marginTop="10sp"/>
                     <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/foto1" />
+                        android:id="@+id/cert2"
+                        android:layout_width="343dp"
+                        android:layout_height="470dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/cert1"
+                        android:layout_marginTop="10sp"/>
+                    <ImageView
+                        android:id="@+id/cert3"
+                        android:layout_width="343dp"
+                        android:layout_height="470dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/cert1"
+                        android:layout_marginTop="10sp"/>
+                    <ImageView
+                        android:id="@+id/cert4"
+                        android:layout_width="343dp"
+                        android:layout_height="470dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/cert1"
+                        android:layout_marginTop="10sp"/>
+                    <ImageView
+                        android:id="@+id/cert5"
+                        android:layout_width="343dp"
+                        android:layout_height="470dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/cert1"
+                        android:layout_marginTop="10sp"/>
+
 
                 </LinearLayout>
             </ScrollView>

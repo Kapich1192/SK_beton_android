@@ -56,11 +56,11 @@
                         android:layout_height="wrap_content"
                         android:text="@string/cart" />
 
-                    <com.google.android.gms.maps.MapView
-                        android:id="@+id/mapView"
+                    <ImageView
+                        android:id="@+id/imageView4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:contentDescription="@string/about" />
+                        app:srcCompat="@drawable/map" />
 
 
                 </LinearLayout>

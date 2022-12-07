@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/cert1"
             android:layout_width="match_parent"
             android:layout_height="286dp"
             app:srcCompat="@drawable/foto1" />
