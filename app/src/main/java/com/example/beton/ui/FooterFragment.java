@@ -1,5 +1,6 @@
 package com.example.beton.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,7 +8,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import com.example.beton.MainActivity;
 import com.example.beton.R;
 
 /**
@@ -16,6 +19,8 @@ import com.example.beton.R;
  * create an instance of this fragment.
  */
 public class FooterFragment extends Fragment {
+
+    Button home, call, profile, chat;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +66,24 @@ public class FooterFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        initButtons();
+       // listenClick();
         return inflater.inflate(R.layout.fragment_footer, container, false);
     }
+
+public void initButtons(){
+       // home.findViewById(R.id.homeButton);
+}
+
+    public void listenClick(){
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Intent intent = new Intent(view.getContext(),MainActivity.class);
+//                view.getContext().startActivity(intent);
+            }
+        });
+    }
+
+
 }

@@ -1,11 +1,15 @@
 package com.example.beton;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.beton.ui.FooterFragment;
+import com.example.beton.ui.HeaderFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,11 +22,15 @@ public class MainActivity extends AppCompatActivity {
 
         initializeButton();
 
-
+        HeaderFragment headerFragment = new HeaderFragment();
+        FooterFragment footerFragment = new FooterFragment();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.header ,headerFragment);
+        ft.replace(R.id.footer,footerFragment);
+        ft.commit();
     }
 
     public void initializeButton() {
-        menu = findViewById(R.id.menu);
         about = findViewById(R.id.about);
         certificates = findViewById(R.id.certificates);
         price = findViewById(R.id.price);

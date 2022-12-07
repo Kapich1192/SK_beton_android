@@ -5,9 +5,9 @@
 
     <string name="menu">Меню</string>
 
-    <string name="about">О нас</string>
+    <string name="about">О Нас</string>
 
-    <string name="contact">контакты</string>
+    <string name="contact">Контакты</string>
 
     <string name="calc">Калькулятор</string>
 
@@ -24,6 +24,25 @@
     <string name="blog">Блог</string>
 
     <string name="chat">Чат</string>
+
+    <string name="description">Бетон от производителя. Москва / Московская обл.</string>
+    <string name="cart">
+Адрес: 109652, г. Москва, ул. Люблинская, 165 корп. 2\n
+Тел.: +7 (495) 998-00-48 / +7 (916) 010-20-41\n
+Время работы: Круглосуточно, без выходных\n
+E-mail: beton.9@mail.ru\n\n
+Реквизиты ООО «СПЕЦТЕХБЕТОН»\n
+ИНН/КПП  9717095926 / 771701001\n
+ОГРН 1207700397607\n
+Юридический адрес : 129085, г. Москва, б-р Звёздный, д.21, стр.1, этаж 1, пом. I, ком. 18, офис 33\n
+к/с 30101810845250000999\n
+БИК 044525999\n
+р/с 40702810002500080255\n
+Филиал ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ"\n
+Генеральный директор : Иляскин Сергей Дмитриевич\n
+
+    </string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

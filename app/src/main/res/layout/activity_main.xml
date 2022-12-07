@@ -8,54 +8,16 @@
     android:backgroundTint="#ECD9D9"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout6"
+    <FrameLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/my_header"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-
-        >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="Бетон от производителя в Москве и Московской области"
-                android:textColor="@color/white" />
-
-            <Button
-                android:id="@+id/menu"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginBottom="15dp"
-                android:layout_weight="2"
-                android:backgroundTint="@color/my_button"
-                android:text="@string/menu"
-                app:cornerRadius="50sp" />
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="75dp"
-            android:layout_weight="0"
-            app:srcCompat="@drawable/logo" />
-
-    </LinearLayout>
+    </FrameLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -66,18 +28,18 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+        app:layout_constraintTop_toBottomOf="@+id/header">
 
         <Button
             android:id="@+id/about"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/my_button"
+            android:backgroundTint="@color/my_header"
             android:onClick="goAboutActivity"
             android:radius="25dp"
             android:text="@string/about"
@@ -85,14 +47,14 @@
 
         <Button
             android:id="@+id/certificates"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/my_button"
+            android:backgroundTint="@color/my_header"
             android:onClick="goCertificateActivity"
             android:text="@string/certificates"
             app:cornerRadius="50sp" />
@@ -111,28 +73,28 @@
 
         <Button
             android:id="@+id/price"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/my_button"
+            android:backgroundTint="@color/my_header"
             android:onClick="goPriceActivity"
             android:text="@string/price"
             app:cornerRadius="50sp" />
 
         <Button
             android:id="@+id/calc"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/my_button"
+            android:backgroundTint="@color/my_header"
             android:onClick="goCalcActivity"
             android:shadowColor="#A39A9A"
             android:shadowDx="5"
@@ -154,28 +116,28 @@
 
         <Button
             android:id="@+id/delivery"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/my_button"
+            android:backgroundTint="@color/my_header"
             android:onClick="goDeliveryActivity"
             android:text="@string/delivery"
             app:cornerRadius="50sp" />
 
         <Button
             android:id="@+id/avtopark"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/my_button"
+            android:backgroundTint="@color/my_header"
             android:onClick="goAvtoparkActivity"
             android:text="@string/avtopark"
             app:cornerRadius="50sp" />
@@ -240,99 +202,52 @@
         android:layout_height="0dp"
         android:layout_weight="2"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <Button
             android:id="@+id/blog"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
 
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
 
             android:layout_weight="1"
-            android:backgroundTint="@color/my_button"
+            android:backgroundTint="@color/my_header"
             android:onClick="goBlogActivity"
             android:text="@string/blog"
             app:cornerRadius="50sp" />
 
         <Button
             android:id="@+id/contacts"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/my_button"
+            android:backgroundTint="@color/my_header"
             android:onClick="goContactsActivity"
             android:text="@string/contact"
             app:cornerRadius="50sp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout8"
+    <FrameLayout
+        android:id="@+id/footer"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="@color/my_header"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-        <ImageButton
-            android:id="@+id/home"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/home"
-            android:backgroundTint="@color/my_header"
-            android:contentDescription="@string/profile"
-            android:layout_marginTop="15sp"
-            />
-
-        <ImageButton
-            android:id="@+id/chat"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/chat"
-            app:srcCompat="@drawable/chat"
-            android:backgroundTint="@color/my_header"
-            android:layout_marginTop="15sp"
-            />
-
-        <ImageButton
-            android:id="@+id/profile"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/profile"
-            android:backgroundTint="@color/my_header"
-            android:contentDescription="@string/profile"
-            android:layout_marginTop="15sp"
-            />
-        <ImageButton
-            android:id="@+id/call"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/call"
-            android:backgroundTint="@color/my_header"
-            android:contentDescription="@string/chat"
-            android:layout_marginTop="15sp"
-            />
-
-
-
-    </LinearLayout>
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
