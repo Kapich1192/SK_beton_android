@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Beton">
         <activity
+            android:name=".CalcActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BlogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AvtoparkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PriceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CertificateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

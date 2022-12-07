@@ -10,4 +10,7 @@
 
     <color name="my_button">#8D9542</color>
     <color name="my_header">#C4C89F</color>
+    <color name="my_icon">#0000003D</color>
+    <color name="back">#ECD9D9</color>>
+
 </resources>

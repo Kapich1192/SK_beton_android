@@ -13,8 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal"
         android:background="@color/my_header"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,19 +35,17 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Бетон от производителя в Москве и Московской области"
-                android:textColor="@color/white"
-                />
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/menu"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginBottom="15dp"
                 android:layout_weight="2"
                 android:backgroundTint="@color/my_button"
                 android:text="@string/menu"
-                app:cornerRadius="50sp"
-                android:layout_marginBottom="15dp"
-                />
+                app:cornerRadius="50sp" />
         </LinearLayout>
 
         <ImageView
@@ -80,10 +78,10 @@
             android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:backgroundTint="@color/my_button"
+            android:onClick="goAboutActivity"
             android:radius="25dp"
             android:text="@string/about"
-            app:cornerRadius="50sp"
-            />
+            app:cornerRadius="50sp" />
 
         <Button
             android:id="@+id/certificates"
@@ -94,10 +92,10 @@
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="15dp"
             android:layout_weight="1"
-            android:text="@string/certificates"
             android:backgroundTint="@color/my_button"
-            app:cornerRadius="50sp"
-            />
+            android:onClick="goCertificateActivity"
+            android:text="@string/certificates"
+            app:cornerRadius="50sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -120,10 +118,10 @@
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="15dp"
             android:layout_weight="1"
-            android:text="@string/price"
             android:backgroundTint="@color/my_button"
-            app:cornerRadius="50sp"
-            />
+            android:onClick="goPriceActivity"
+            android:text="@string/price"
+            app:cornerRadius="50sp" />
 
         <Button
             android:id="@+id/calc"
@@ -135,12 +133,12 @@
             android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:backgroundTint="@color/my_button"
+            android:onClick="goCalcActivity"
             android:shadowColor="#A39A9A"
             android:shadowDx="5"
             android:shadowDy="5"
             android:text="@string/calc"
-            app:cornerRadius="50sp"
-            />
+            app:cornerRadius="50sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -163,10 +161,25 @@
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="15dp"
             android:layout_weight="1"
-            android:text="@string/delivery"
             android:backgroundTint="@color/my_button"
-            app:cornerRadius="50sp"
-            />
+            android:onClick="goDeliveryActivity"
+            android:text="@string/delivery"
+            app:cornerRadius="50sp" />
+
+        <Button
+            android:id="@+id/avtopark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/my_button"
+            android:onClick="goAvtoparkActivity"
+            android:text="@string/avtopark"
+            app:cornerRadius="50sp" />
+
 
     </LinearLayout>
 
@@ -216,10 +229,9 @@
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="15dp"
             android:layout_weight="1"
-            android:text="Button"
             android:backgroundTint="@color/my_button"
-            app:cornerRadius="50sp"
-            />
+            android:text="Button"
+            app:cornerRadius="50sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -245,6 +257,7 @@
 
             android:layout_weight="1"
             android:backgroundTint="@color/my_button"
+            android:onClick="goBlogActivity"
             android:text="@string/blog"
             app:cornerRadius="50sp" />
 
@@ -258,6 +271,7 @@
             android:layout_marginBottom="15dp"
             android:layout_weight="1"
             android:backgroundTint="@color/my_button"
+            android:onClick="goContactsActivity"
             android:text="@string/contact"
             app:cornerRadius="50sp" />
     </LinearLayout>
@@ -267,53 +281,56 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal"
         android:background="@color/my_header"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
-        <Button
-            android:id="@+id/profile"
+        <ImageButton
+            android:id="@+id/home"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:text="@string/profile"
-            android:backgroundTint="@color/my_button"
-            app:cornerRadius="50sp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/home"
+            android:backgroundTint="@color/my_header"
+            android:contentDescription="@string/profile"
+            android:layout_marginTop="15sp"
             />
 
-        <Button
+        <ImageButton
             android:id="@+id/chat"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:text="@string/chat"
-            android:backgroundTint="@color/my_button"
-            app:cornerRadius="50sp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/chat"
+            app:srcCompat="@drawable/chat"
+            android:backgroundTint="@color/my_header"
+            android:layout_marginTop="15sp"
             />
-        <Button
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/profile"
+            android:backgroundTint="@color/my_header"
+            android:contentDescription="@string/profile"
+            android:layout_marginTop="15sp"
+            />
+        <ImageButton
             android:id="@+id/call"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:text="Позвонить"
-            android:backgroundTint="@color/my_button"
-            app:cornerRadius="50sp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/call"
+            android:backgroundTint="@color/my_header"
+            android:contentDescription="@string/chat"
+            android:layout_marginTop="15sp"
             />
+
 
 
     </LinearLayout>
