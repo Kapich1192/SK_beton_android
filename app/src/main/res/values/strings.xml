@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SK_beton</string>
+
+    <string name="copyright">SK-Бетон. Производитель бетона. Москва, Московская обл. </string>
+
+    <string name="menu">Меню</string>
+
+    <string name="about">О нас</string>
+
+    <string name="contact">контакты</string>
+
+    <string name="calc">Калькулятор</string>
+
+    <string name="price">Цены</string>
+
+    <string name="certificates">Сертификаты</string>
+
+    <string name="avtopark">Аренда спецтехники</string>
+
+    <string name="delivery">Доставка</string>
+
+    <string name="profile">Профиль</string>
+
+    <string name="blog">Блог</string>
+
+    <string name="chat">Чат</string>
+</resources>
